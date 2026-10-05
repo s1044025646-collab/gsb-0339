@@ -1,0 +1,25 @@
+{
+  "name": "b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "type": "module",
+  "bin": {
+    "trirast": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "node --test --import tsx tests/*.test.ts",
+    "demo": "node --import tsx ./src/cli.ts demo",
+    "cli": "node --import tsx ./src/cli.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
